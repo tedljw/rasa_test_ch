@@ -16,8 +16,6 @@ pip install rasa_core==0.11.4
 pip install rasa_core_sdk==0.11.4
 ```
 
-包安装位置：/root/anaconda3/envs/ljw_python3/lib/python3.5/site-packages/
-
 
 ## 安装语料训练工具
 
