@@ -1,0 +1,1647 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "中信卡在中信取款怎么收费",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "中信柜台取现怎么收费？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "取现",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "中信柜台取现有费用吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "取现",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "同城中信柜台取款有费用吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "取款",
+            "entity": "item"
+          },
+          {
+            "start": 0,
+            "end": 2,
+            "value": "同城",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "异地中信柜台取款有费用吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "取款",
+            "entity": "item"
+          },
+          {
+            "start": 0,
+            "end": 2,
+            "value": "异地",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "不去开户行取款会收费吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 7,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "中信卡在中信取款如何收费？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "异地中信柜台取现有费用吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "取现",
+            "entity": "item"
+          },
+          {
+            "start": 0,
+            "end": 2,
+            "value": "异地",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "异地中信柜台取钱有费用吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "取钱",
+            "entity": "item"
+          },
+          {
+            "start": 0,
+            "end": 2,
+            "value": "异地",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "到柜台取款有费用吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "取款",
+            "entity": "item"
+          },
+          {
+            "start": 1,
+            "end": 3,
+            "value": "柜台",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "到柜台取钱有费用吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "取钱",
+            "entity": "item"
+          },
+          {
+            "start": 1,
+            "end": 3,
+            "value": "柜台",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "异地本行取款费用？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "到柜台取现费用是多少？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 1,
+            "end": 3,
+            "value": "柜台",
+            "entity": "place"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "取现",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "到柜台取钱费用是多少？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 1,
+            "end": 3,
+            "value": "柜台",
+            "entity": "place"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "取钱",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "通过中信柜台取钱会收费吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "取钱",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "在中信取款免费吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "中信理财宝在柜台取款有费用吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "柜台",
+            "entity": "place"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "中信储蓄卡到柜台取款有费用吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "柜台",
+            "entity": "place"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "中信理财宝在中信机具取款有费用吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 12,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行取款费用？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行取款怎么收费？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行取款如何收费？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行取款收费标准？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行取现费用？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "取现",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行柜台取现费用？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "取现",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行柜台取钱费用？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "取钱",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行取款费是多少？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行取款如何收取费用的？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行取款怎么收费的？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "通过中信办理人民币取款怎么收费？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "人民币",
+            "entity": "money"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "人民币取现费用标准？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "人民币",
+            "entity": "money"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "取现",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "RMB取款费用？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "RMB",
+            "entity": "money"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "普卡柜台取人民币怎么收费？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "普卡柜台取人民币如何收费的？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "普卡同城柜台取人民币有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "同城",
+            "entity": "place"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "普卡异地本行柜台取人民币有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "普卡异地本行柜台取人民币费用？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "普卡异地本行柜台取人民币费用是多少？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "金卡柜台取人民币怎么收费？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "金卡柜台取人民币如何收费的？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "金卡同城柜台取人民币有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "同城",
+            "entity": "place"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "金卡异地本行柜台取人民币有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "金卡异地本行柜台取人民币费用？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "金卡异地本行柜台取人民币费用是多少？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 9,
+            "end": 12,
+            "value": "人民币",
+            "entity": "money"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "异地",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "白金卡柜台取人民币怎么收费？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "白金卡柜台取人民币如何收费的？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "白金卡同城柜台取人民币有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "白金卡异地本行柜台取人民币有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "白金卡异地本行柜台取人民币费用？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "白金卡异地本行柜台取人民币费用是多少？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "钻石卡柜台取人民币怎么收费？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "钻石卡柜台取人民币如何收费的？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "钻石卡同城柜台取人民币有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "钻石卡异地本行柜台取人民币有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "人民币",
+            "entity": ""
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "异地",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "钻石卡异地本行柜台取人民币费用？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "人民币",
+            "entity": "money"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "异地",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "钻石卡异地本行柜台取人民币费用是多少？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "人民币",
+            "entity": "money"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "异地",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "我带借记卡到异地中信柜台取人民币怎么收费的？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "我拿中信卡到异地中信柜台取二万有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "取二万",
+            "entity": "item"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "异地",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "我现不在开户地，在异地的中信柜台取十万有费用吗",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 2,
+            "end": 7,
+            "value": "不在开户地",
+            "entity": "place"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "value": "取十万",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "我能不能带中信卡到异的中信柜台取人民币，怎么收费的",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 9,
+            "end": 11,
+            "value": "异的",
+            "entity": "place"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "value": "人民币",
+            "entity": "money"
+          }
+        ]
+      },
+      {
+        "text": "我现在外地，要取款十万，在异地中信柜台取有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "取款",
+            "entity": "item"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "外地",
+            "entity": "place"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "value": "异地",
+            "entity": "place"
+          }
+        ]
+      },
+      {
+        "text": "我通过中信机具取款怎么收费的？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行机具取款费用？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行机具取现费用？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "取现",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "本行机具取钞费用？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "取钞",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "在中信机具上取款收费吗？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "通过中信机具取款怎么收费？",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "异地中信机具取款怎么收费？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "异地",
+            "entity": "place"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "不在开户地的中信机具取款有费用吗？",
+        "intent": "ask_money",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "不在开户地",
+            "entity": "place"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "value": "取款",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您好吗",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "嗨",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你是谁",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您是",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你是哪个",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "喂",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "再见",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "拜拜",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "很高兴和你说话",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "嗯",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "好的",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "行",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "可以的",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "恩",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "中中",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "中",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "办吧",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "办理吧",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "行的",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "确定",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "肯定",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "一定",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "就这样",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "就这么办",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "就这么着",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "就这么着吧",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "没问题",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "谢谢",
+        "intent": "thanks",
+        "entities": []
+      },
+      {
+        "text": "谢谢您",
+        "intent": "thanks",
+        "entities": []
+      },
+      {
+        "text": "谢谢你",
+        "intent": "thanks",
+        "entities": []
+      },
+      {
+        "text": "非常感谢",
+        "intent": "thanks",
+        "entities": []
+      },
+      {
+        "text": "谢谢啊",
+        "intent": "thanks",
+        "entities": []
+      },
+      {
+        "text": "谢了",
+        "intent": "thanks",
+        "entities": []
+      },
+      {
+        "text": "不要",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "不需要",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "不要办",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "不办",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "暂时不要了",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "不是",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "有问题",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "我再考虑考虑",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "不好啦",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "不行",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "不可以的",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "不中",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "不可以",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "没了",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "没有了",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "不用了",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "暂时不用了",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "好的没了",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "好不用了",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "=",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "&",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "吃饭",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "哪里有吃饭的地方？",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "我想吃好吃的",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "今晚吃什么",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "你吃了吗？",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "附近哪里有餐厅？",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "附近有吃饭的地方吗？",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "我饿了",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "我要吃饭",
+        "intent": "unknown_intent",
+        "entities": []
+      },
+      {
+        "text": "hi 你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你是 你是",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你是谁 哪个",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你好 您是哪个",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "在吗 你是谁",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您是哪个 您是哪个",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey 您是哪个",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你是谁 你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "嗨",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您是 hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你是谁 hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey 您好吗",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您是哪个 您好吗",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "在吗 嗨",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "喂 你好吗",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您是哪个 哪个",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你是谁 您好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你是谁 hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "哪个 你好吗",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "喂 在吗",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey 您好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你是哪个 哪个",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您好 你好吗",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "喂 你是哪个",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "你是谁 你是谁",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您是哪个 你好",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您好吗 喂",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "您好吗 hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "喂 hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "喂",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "byebye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "see you",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "走你",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "拜拜",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "再见",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "很高兴和你说话",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "拜",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "回见",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "下次见",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "没问题",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "中",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "中中",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "办",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "办吧",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "恩",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "可以的",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "你看着办",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "办理吧",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "行",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "办理",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "嗯",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "好的",
+        "intent": "confirm",
+        "entities": []
+      },
+      {
+        "text": "行的",
+        "intent": "confirm",
+        "entities": []
+      }
+    ]
+  }
+}
