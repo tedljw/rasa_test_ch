@@ -81,23 +81,21 @@ rasa-nlu-trainer -p 10000 --source data/bank.json
 
 ## domain.md 编写：
 
-标识    |    说明
-------------- | -------------
-intents | 意图
-entities | 实体
-slots | 槽
-templates | 回答模板
-actions | 动作
+ 标识    |    说明
+----------------- | -----------------
+ intents | 意图
+ entities | 实体
+ slots | 槽
+ templates | 回答模板
+ actions | 动作
 
 ## stories.md 编写：
 
 符号    |    说明
-------------- | -------------
-##| story标题
-*| 意图
--| 动作
-templates | 回答模板
-actions | 动作
+----------------- | -----------------
+ ##| story标题
+ *| 意图
+ -| 动作
 
 ## 自定义 action 添加 ：
 
