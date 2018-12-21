@@ -79,4 +79,55 @@ curl -XPOST localhost:5000/parse -d '{"q":我想去柜台取人民币？", "proj
 rasa-nlu-trainer -p 10000 --source data/bank.json
 ```
 
+## domain.md 编写：
 
+标识    |    说明
+------------- | -------------
+intents | 意图
+entities | 实体
+slots | 槽
+templates | 回答模板
+actions | 动作
+
+## stories.md 编写：
+
+符号    |    说明
+------------- | -------------
+##| story标题
+* | 意图
+- | 动作
+templates | 回答模板
+actions | 动作
+
+## 自定义 action 添加 ：
+
+事先需要安装 rasa_core_sdk
+
+action分为3大类：
+
+1.default action：（action_listen，action_restart，action_default_fallback）
+
+2.utter action：以utter_开头的action，用于给用户发送信息。
+
+3.custom action：用户自定义的action
+
+action服务的配置endpoints.yml:
+
+```yml
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+```
+
+在core的运行命令之后加上：--endpoints endpoints.yml
+
+```bash
+python -m rasa_core.run -d models/dialogue/ -u models/default/model_20181220-110910/ --endpoints endpoints.yml
+```
+
+同时如果你自定义的action文件名叫actions.py，那么，你需要事先运行如下命令启动你的action：
+
+```bash
+python -m rasa_core_sdk.endpoint --actions actions
+```
+
+action_default_fallback 可用于回滚操作 具体参看fallback actions
