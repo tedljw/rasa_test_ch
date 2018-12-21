@@ -1,0 +1,80 @@
+slots:
+  item:
+    type: text
+  bank:
+    type: text
+  money:
+    type: text
+  place:
+    type: text
+  card:
+    type: text
+
+intents:
+  - greet
+  - confirm
+  - goodbye
+  - thanks
+  - inform
+  - request_search
+  - ask_money
+  - ask_place
+  - deny
+  - unknown_intent
+  - answer
+
+entities:
+  - item
+  - bank
+  - money
+  - place
+  - card
+  
+templates:
+  utter_greet:
+    - "您好! 我是机器人小贝，很高兴为您服务。"
+    - "你好! 我是小贝，可以帮您办理取款业务。"
+    - "hi! 我是小贝，有什么可以帮您吗。"
+  utter_goodbye:
+    - "再见，为您服务很开心"
+    - "Bye， 下次再见"
+  utter_default:
+    - "您说什么，小贝听不懂。"
+    - "你说的小贝不懂呀！"
+    - "不好意思，您能换个说法吗？"
+  utter_thanks:
+    - "不用谢"
+    - "我应该做的"
+    - "您开心我就开心"
+  utter_ask_morehelp:
+    - "还有什么能帮您吗？"
+    - "您还需要什么服务？"
+  utter_ask_bank:
+    - "请问您是本行取款、他行取款还是境外取款？"
+    - "请问取款渠道是本行取款、他行取款还是境外取款？"
+  utter_ask_money:
+    - "请问您是人民币取款还是外币取款？"
+    - "请问人民币{bank}取款还是外币{bank}取款？"
+    - "人民取款还是外币取款"
+  utter_ask_place:
+    - "请问您是本地取款还是异地取款？"
+    - "请问您是{bank}{money}同城取款还是异地取款？"
+  utter_ask_card:
+    - "请问您的取款使用的是什么类型的卡？"
+  utter_confirm:
+    - "你确认吗？"
+  utter_answer:
+    - "人民币本行柜台、自助机具（含同城、异地）取款都是免费哦！"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_default
+  - utter_thanks
+  - utter_ask_morehelp
+  - utter_ask_bank
+  - utter_ask_money
+  - utter_ask_place
+  - utter_ask_card
+  - utter_confirm
+  - action_answer
