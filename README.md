@@ -79,6 +79,7 @@ curl -XPOST localhost:5000/parse -d '{"q":我想去柜台取人民币？", "proj
 rasa-nlu-trainer -p 10000 --source data/bank.json
 ```
 
+
 ## domain.md 编写：
 
  标识    |    说明
@@ -89,6 +90,7 @@ rasa-nlu-trainer -p 10000 --source data/bank.json
  templates | 回答模板
  actions | 动作
 
+
 ## stories.md 编写：
 
 符号    |    说明
@@ -96,6 +98,7 @@ rasa-nlu-trainer -p 10000 --source data/bank.json
  ##| story标题
  *| 意图
  -| 动作
+
 
 ## 自定义 action 添加 ：
 
@@ -129,3 +132,28 @@ python -m rasa_core_sdk.endpoint --actions actions
 ```
 
 action_default_fallback 可用于回滚操作 具体参看fallback actions
+
+
+## 开通rest交互方法
+
+需添加credentials.yml文件，文件的内容为：
+
+```yml
+rest:
+```
+
+具体参考：https://github.com/RasaHQ/rasa_core/blob/0.12.x/docs/connectors.rst#id24
+
+运行如下命令，将rest跑起来：
+
+```bash
+python -m rasa_core.run -d models/dialogue -u models/default/model_20190110-150650/ --endpoints endpoints.yml --port 5002 --credentials credentials.yml
+```
+
+发送的json来同rasa进行交互：
+
+```bash
+curl -XPOST http://localhost:5002/webhooks/rest/webhook -d '{"sender": "user1", "message": "你好"}' -H "Content-type: application/json"
+```
+
+通过sender来控制通话的连贯性
