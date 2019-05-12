@@ -1,0 +1,26 @@
+test rasa nlu
+$ python httpserver.py
+$ curl -X POST localhost:1235/parse -d '{"q":"我的流量还剩多少"}' | python -m json.tool
+{
+    'q': '我的流量还剩多少', 
+    'intent': 'request_search', 
+    'entities': {
+        'item': '流量'
+    }
+}
+
+
+test
+Run command below:
+
+python bot.py run
+
+
+
+source activate ljw_python3  
+
+python -m rasa_core_sdk.endpoint --actions actions
+
+python -m rasa_core.run -d models/dialogue -u models/default/model_20190110-150650/
+
+curl -XPOST http://localhost:5002/webhooks/default/webhook -d '{"sender": "user1", "message": "你好"}' -H "Content-type: application/json"

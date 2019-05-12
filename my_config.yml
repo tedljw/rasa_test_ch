@@ -1,0 +1,28 @@
+language: "zh"
+
+pipeline:
+- name: "nlp_mitie"
+  model: "data/total_word_feature_extractor_zh.dat"
+- name: "tokenizer_jieba"
+  dictionary_path: "word"
+- name: "ner_mitie"
+- name: "ner_synonyms"
+- name: "intent_entity_featurizer_regex"
+- name: "intent_featurizer_mitie"
+- name: "intent_classifier_sklearn"
+
+
+#language: "zh"
+
+#pipeline:
+#- name: "tokenizer_jieba"
+#  dictionary_path: "word"
+#- name: "bert_vectors_featurizer"
+#  ip: '10.1.58.21'
+#  port: 5555
+#  port_out: 5556
+#  show_server_config: True
+#  timeout: 10000
+#- name: "intent_classifier_tensorflow_embedding_bert"
+#- name: "ner_crf"
+#- name: "jieba_pseg_extractor"
